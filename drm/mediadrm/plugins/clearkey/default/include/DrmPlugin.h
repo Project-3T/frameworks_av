@@ -262,7 +262,11 @@ private:
     void initProperties();
     void setPlayPolicy();
 
+<<<<<<< HEAD
     android::Mutex mPlayPolicyLock;
+=======
+    mutable android::Mutex mPlayPolicyLock;
+>>>>>>> 30555b45e928106f9a518a803dfb8f71d63e0ada
     android::KeyedVector<String8, String8> mPlayPolicy;
     android::KeyedVector<String8, String8> mStringProperties;
     android::KeyedVector<String8, Vector<uint8_t>> mByteArrayProperties;
